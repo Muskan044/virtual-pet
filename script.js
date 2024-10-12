@@ -3,8 +3,8 @@ let pet = {
     name: "",
     type: "",
     age: 0,
-    happiness: 50, // Default happiness between 0 and 100
-    hunger: 50,    // Default hunger between 0 and 100
+    happiness: 0,
+    hunger: 0,    
 
     // Method to feed the pet
     feed() {
@@ -46,6 +46,9 @@ function startGame() {
     pet.name = prompt("What is your pet's name?");
     pet.type = prompt("What kind of pet is it (e.g., dog, cat, dragon)?");
     pet.age = parseInt(prompt("How old is your pet?"), 10);
+    pet.happiness = prompt("How happy is your pet?");
+    pet.hunger = prompt("How hungry is your pet?");
+
 
     let playing = true;
     while (playing) {
