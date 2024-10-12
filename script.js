@@ -16,3 +16,15 @@ let pet = {
             alert(`${this.name} is not hungry.`);
         }
     },
+
+        // Method to play with the pet
+        play() {
+            if (this.happiness < 100) {
+                this.happiness += 20;
+                if (this.happiness > 100) this.happiness = 100; // Happiness can't exceed 100
+                alert(`${this.name} played and is happy! Happiness is now: ${this.happiness}`);
+            } else {
+                alert(`${this.name} is already fully happy!`);
+            }
+        },
+    
